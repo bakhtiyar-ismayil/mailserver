@@ -26,13 +26,13 @@ We need to make change to postfix file:
 
 **# vim/etc/postfix/main.cf**
 
-![img](mailserver/img/mailserver11.png)
+![img](img/mailserver11.png)
 
 **# systemctl restart postfix**
 
 **# systemctl enable postfix**
 
-![img](mailserver/img/mailserver9.png)
+![img](img/mailserver9.png)
 
 
 # 2. Installing and configure dovecot 
@@ -43,9 +43,9 @@ We need to make change to postfix file:
 
 **# systemctl enable dovecot**
 
-![img](mailserver/img/mailserver1.png)
+![img](img/mailserver1.png)
 
-![img](mailserver/img/mailserver12.png)
+![img](img/mailserver12.png)
 
 
 **# vim /etc/dovecot/dovecot.conf**
@@ -86,13 +86,13 @@ group = postfix ## uncomment line 92 and enter postfix
 
 **# yum install squirrelmail -y**
 
-![img](mailserver/img/mailserver6.png)
+![img](img/mailserver6.png)
 
 **# cd /usr/share/squirrelmail/config/**
 
 **# ./conf.pl**
 
-![img](mailserver/img/mailserver13.png)
+![img](img/mailserver13.png)
 
 **# vim /etc/httpd/conf/httpd.conf**
 
@@ -116,7 +116,7 @@ Allow from all
 
 
 
-![img](mailserver/img/mailserver14.png)
+![img](img/mailserver14.png)
 
 **# systemctl restart httpd**
 
@@ -128,20 +128,20 @@ Allow from all
 
 (Ok , now open mariadb.conf and copy-paste commands to your shell) 
 
-![img](mailserver/img/mailserver2.png)
+![img](img/mailserver2.png)
 
-![img](mailserver/img/mailserver3.png)
+![img](img/mailserver3.png)
 
-![img](mailserver/img/mailserver4.png)
+![img](img/mailserver4.png)
 
-![img](mailserver/img/mailserver7.png)
+![img](img/mailserver7.png)
 
 
 Ok, we installed and configure mariadb,open browser and type http://yourdomainname/webmail
 
-![img](mailserver/img/mailserver8.png)
+![img](img/mailserver8.png)
 
-![img](mailserver/img/mailserver10.png)
+![img](img/mailserver10.png)
 
 
 
